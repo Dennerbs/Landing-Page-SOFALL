@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@500&display=swap');
+
+
+/* reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --header: #545454;
+    --logo: #858585;
+    --botao: #040303;
+    --primary-gradient: #800c08;
+
+    --secondary: #09d646;
+    --secondary-gradiente: #056321;
+    --text-color: #fff;
+    --text-secondary: #000;
+    --text-tertiary: #f3f588;
+
+    --primary-font: 'Poppins';
+    --secondary-font: 'Anton';
+}
+
+html {
+    font-family: var(--primary-font), sans-serif;
+    list-style: none;
+    color: var(--text-color);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10px;
+    background: var(--header);
+}
+
+.logo {
+    font-family: var(--secondary-font), sans-serif;
+    font-weight: 100;
+    background: var(--logo);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+header nav {
+    font-family: var(--secondary-font), sans-serif;
+    font-weight: 100;
+    font-size: medium;
+    letter-spacing: 2px;
+
+}
+
+header nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--text-color);
+
+
+}
+
+.btn-action {
+    color: var(--text-color);
+    background: var(--botao);
+    border-radius: 5px;
+    padding: 10px 20px;
+
+}
+
+.btn-action:hover {
+    background: linear-gradient(to right, var(--logo), var(--logo));
+    color: white;
+    transition: 0.5s ease;
+}
+
+/************************* main section **********************************/
+main {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.4)), url("../assets/imgs/Sofa\ home.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 75vh;
+
+
+}
+
+.main-content {
+    text-shadow: rgb(29, 32, 27) 0.1rem 0.1rem 0.2rem;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 10vw;
+    border: 10px;
+
+}
+
+.main-text {
+    flex: 1;
+
+}
+
+.primary-text {
+    font-size: 2.5rem;
+}
+
+.secondary-text {
+    padding-top: 1vh;
+    font-size: 1rem;
+}
+
+.btn-main {
+    margin-top: 2vh;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 10px 80px;
+}
+
+/***************************** 2th section  ******************************/
+.numbers121 {
+    background: white;
+    text-shadow: rgb(123, 124, 122) 0.1rem 0.1rem 0.2rem;
+    height: 30vh;
+    text-align: center;
+}
+
+.elemento-descricao {
+    color: var(--header);
+}
+
+.secondary-content {
+    padding-top: 2vh;
+
+
+}
+
+.secondary-content .primary-text {
+    color: var(--text-secondary);
+    font-size: 2rem;
+
+}
+
+.secondary-content .primary-text span {
+    font-family: var(--secondary-font), sans-serif;
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+.secondary-content .elementos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 2vh;
+    font-size: 3rem;
+    font-family: var(--secondary-font), sans-serif;
+    font-weight: 100;
+}
+
+.secondary-content .elemento-descricao {
+    font-size: 1.2rem;
+}
+
+
+/***************************** 4th section  ******************************/
+
+.sec-testemunhos {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+    text-align: center;
+}
+
+.testemunhos {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+}
+
+.testemunho {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.testemunho-img,
+.avaliacao {
+    flex: 1;
+}
+
+.testemunho .testemunho-img {
+    width: 200px;
+    height: 350px;
+    border-radius: 4%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1rem;
+}
+
+.avaliacao {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.depoimento {
+    width: 80%;
+}
+
+.nota {
+    display: flex;
+
+}
+
+#testemunho-1 {
+    background-image: url("../assets/imgs/sofa3.jpg");
+
+}
+
+#testemunho-2 {
+    background-image: url("../assets/imgs/sofa2.jpg");
+}
+
+#testemunho-3 {
+    background-image: url("../assets/imgs/sofa1.jpg");
+
+}
+
+
+
+/***************************** 4th section  ******************************/
+.team121 {
+    background: white;
+    background-position: center;
+    background-size: cover;
+    height: 75vh;
+    color: black;
+
+    text-shadow: rgb(123, 124, 122) 0.1rem 0.1rem 0.2rem;
+    text-align: center;
+
+}
+.equipe{
+    display: flex;
+    flex-direction: column;
+}
+
+.vendas{
+    display: flex;
+    flex-direction: row;
+}
+.imageEquipe {
+    width: 100px;
+    height: 150px;
+    border-radius: 35%;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#ceo {
+    background-image: url("../assets/imgs/p3.jpg");
+}
+
+#gerente {
+    background-image: url("../assets/imgs/p7.jpg");
+
+}
+#vendedor1 {
+    background-image: url("../assets/imgs/p1.jpg");
+}
+#vendedor2 {
+    background-image: url("../assets/imgs/p2.jpg");
+}
+#vendedor3 {
+    background-image: url("../assets/imgs/p4.jpg");
+}
